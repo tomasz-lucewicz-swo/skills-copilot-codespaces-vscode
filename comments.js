@@ -13,4 +13,7 @@ app.listen(3000, () => {
     console.log('Server is running on http://localhost:3000/comments');
 });
 
-//
+// Add Post MEthod
+app.post('/comments', (req, res) => {
+    res.send('This is a post request');
+});
